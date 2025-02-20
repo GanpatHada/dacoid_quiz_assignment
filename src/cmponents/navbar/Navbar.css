@@ -1,0 +1,13 @@
+#main-nav
+{
+  border-bottom: 1px solid var(--primary-border);
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+#branding{
+    color: white;
+}
+#branding h1{
+    font-size: 2rem;
+}

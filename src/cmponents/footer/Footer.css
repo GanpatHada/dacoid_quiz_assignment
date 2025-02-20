@@ -1,0 +1,6 @@
+#main-footer{
+    border-top: 1px solid var(--primary-border);
+    padding: 10px;
+    color: whitesmoke;
+    text-align: center;
+}
