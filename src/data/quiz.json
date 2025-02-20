@@ -31,41 +31,36 @@
     "id": 5,
     "question": "Which of these processes is not typically involved in refining petroleum?",
     "options": ["Fractional distillation", "Cracking", "Polymerization","Filtration"],
-    "correctAnswer": "Polymerization",
+    "correctAnswer": "Filtration",
     "type":"MCQ"
   },
   {
     "id": 6,
     "question": "What is the value of 12 + 28?",
-    "options": ["30", "40", "50", "60"],
     "correctAnswer": "40",
     "type":"fill"
   },
   {
     "id": 7,
     "question": "How many states are there in the United States?",
-    "options": ["48", "49", "50", "51"],
     "correctAnswer": "50",
     "type":"fill"
   },
   {
     "id": 8,
     "question": "In which year was the Declaration of Independence signed?",
-    "options": ["1776", "1781", "1790", "1800"],
     "correctAnswer": "1776",
     "type":"fill"
   },
   {
     "id": 9,
     "question": "What is the value of pi rounded to the nearest integer?",
-    "options": ["2", "3", "4", "5"],
     "correctAnswer": "3",
     "type":"fill"
   },
   {
     "id": 10,
     "question": "If a car travels at 60 mph for 2 hours, how many miles does it travel?",
-    "options": ["90", "100", "120", "150"],
     "correctAnswer": "120",
     "type":"fill"
   }

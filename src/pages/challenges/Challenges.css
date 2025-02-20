@@ -113,7 +113,21 @@
 #previous-button {
   background-color: whitesmoke;
 }
+#fillup-wrapper{
+  display: flex;
+  gap: 1rem;
+}
+#fillup{
+  background-color: transparent;
+  border: 1px solid var(--primary-border);
+  color: lightgray;
+  padding: 0.5rem;
+  flex: 1;
 
+}
+#fillup-wrapper button{
+  padding: 0.5rem 1rem;
+}
 
 @media screen and (max-width:479px) {
    #challenges-page{

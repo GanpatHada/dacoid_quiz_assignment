@@ -4,7 +4,7 @@ import quizData from "../../data/quiz.json";
 interface Question {
   id: number;
   question: string;
-  options: string[];
+  options?: string[];
   correctAnswer: string;
   selectedAnswer: string | null;
   type: string;
@@ -19,7 +19,7 @@ interface QuizState {
 
 
 const getInitialState = (): QuizState => ({
-  questions: quizData.map((q) => ({
+    questions: quizData.map((q) => ({
     ...q,
     selectedAnswer: null,
     markCorrect: false,
@@ -45,7 +45,7 @@ const quizSlice = createSlice({
         const answer = action.payload;
         const currentQuestion = state.questions[state.currentQuestionIndex];
         state.questions[state.currentQuestionIndex].selectedAnswer=answer;
-        if (answer === currentQuestion.correctAnswer) {
+        if (answer.trim().toLowerCase() === currentQuestion.correctAnswer.toLowerCase()) {
           state.questions[state.currentQuestionIndex].markCorrect=true;
           state.score+=1;
         }

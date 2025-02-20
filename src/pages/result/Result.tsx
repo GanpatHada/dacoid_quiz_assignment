@@ -61,7 +61,7 @@ const Attempts = () => {
       setLoading(true);
       try {
         const attemptsList = await getAllQuizAttempts();
-        setAttempts(attemptsList);
+        setAttempts(attemptsList.sort((item1,item2)=>Number(item2.time)-Number(item1.time)));
       } catch (error) {
         throw error;
       } finally {
