@@ -3,7 +3,6 @@ import Navbar from './cmponents/navbar/Navbar'
 import './utils/common.css'
 import Footer from './cmponents/footer/Footer'
 import './App.css'
-import Challenges from './pages/challenges/Challenges'
 import Routes from './Routes'
 
 const AppContent:React.FC=()=>{

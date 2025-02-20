@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Result.css";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../app/store";
 import { resetQuiz } from "../../features/quiz/quizSlice";
 import { useNavigate } from "react-router-dom";
-import { addQuizAttempt, getAllQuizAttempts } from "../../services/quizService";
+import {getAllQuizAttempts } from "../../services/quizService";
 
 const ResultContent = () => {
   const navigate = useNavigate();
@@ -85,6 +85,7 @@ const Attempts = () => {
 
   return (
     <div id="attempts-wrapper">
+      {loading?<p>Loading ....</p>:<>
       {attempts.length===0?<p>No attempts History available</p>:
       attempts.map((attempt,index) => {
         return (
@@ -98,12 +99,12 @@ const Attempts = () => {
           </div>
         );
       })}
+      </>}
     </div>
   );
 };
 
 const Result = () => {
-  const { questions } = useSelector((state: RootState) => state.quiz);
   return (
     <div id="result-page">
       <section id="score-section">

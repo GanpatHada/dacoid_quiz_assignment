@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-const Navbar = () => {
+const Navbar:React.FC = () => {
   return (
     <nav id="main-nav">
         <section id="branding">
